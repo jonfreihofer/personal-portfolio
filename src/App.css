@@ -2,17 +2,23 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   margin-top: 25%;
   color: #0d64e7;
   letter-spacing: 3px;
   font-weight: bolder;
   font-size: 2.75em;
-  animation: animation 4s ease infinite;
-  animation-name: animation;
   text-transform: uppercase;
-  text-shadow: #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px,
+  text-shadow: #fff 0px 0px 3.5px, #fff 0px 0px 1px, #fff 0px 0px 1px,
     #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px;
+}
+.name {
+  animation: animation 5s linear forwards;
+  animation-name: animation;
+}
+.subtitle {
+  font-size: 1.75rem;
 }
 @keyframes animation {
   from {
