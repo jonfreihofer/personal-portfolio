@@ -1,0 +1,3 @@
+import styled from "styled-components";
+
+export const StyledIconContainer = styled.div``;
