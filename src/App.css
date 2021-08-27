@@ -1,14 +1,15 @@
 .landing__page {
   margin: 0 auto;
+  margin-bottom: 55%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-top: 25%;
+  margin-top: 12%;
   color: #0d64e7;
   letter-spacing: 3px;
   font-weight: bolder;
-  font-size: 2.75em;
+  font-size: 3.2em;
   text-transform: uppercase;
   text-shadow: #fff 0px 0px 3.5px, #fff 0px 0px 1px, #fff 0px 0px 1px,
     #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px;
@@ -26,5 +27,12 @@
   }
   to {
     color: #fff;
+  }
+}
+
+@media (max-width: 400px) {
+  .landing__page {
+    text-align: center;
+    margin: 4px;
   }
 }

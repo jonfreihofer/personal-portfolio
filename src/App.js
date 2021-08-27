@@ -1,5 +1,5 @@
 import "./App.css";
-import IconContainer from "./containers/IconContainer";
+import IconContainer from "../src/containers/IconContainer";
 function App() {
   return (
     <>
