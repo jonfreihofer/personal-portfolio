@@ -22,6 +22,11 @@
   font-size: 1.75rem;
   margin-bottom: 10px;
 }
+
+.icons * {
+  cursor: pointer;
+}
+
 @keyframes animation {
   from {
     color: #0d64e7;

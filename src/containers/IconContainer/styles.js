@@ -8,4 +8,5 @@ export const StyledIconContainer = styled.div`
   margin-top: 10px;
   opacity: 0.3;
   font-size: 1.2em;
+  cursor: pointer;
 `;

@@ -1,7 +1,6 @@
 /* eslint-disable no-restricted-globals */
 import "./App.css";
 import { useState } from "react";
-import { Icon } from "../src/components/Icon";
 import IconContainer from "../src/containers/IconContainer";
 import { FaEye, FaCode, FaClipboard } from "react-icons/fa";
 
@@ -9,19 +8,7 @@ function App() {
   const [hovered, setHovered] = useState(false);
   const [linkTitle, setLinkTitle] = useState("Front End Engineer");
   const changeTitle = (title) => {
-    switch (title) {
-      case "about":
-        hovered && setLinkTitle("About Me");
-        break;
-      case "projects":
-        hovered && setLinkTitle("Recent Work");
-        break;
-      case "resume":
-        hovered && setLinkTitle("Resume");
-        break;
-      default:
-        return null;
-    }
+    setLinkTitle(title);
   };
 
   return (
@@ -31,32 +18,35 @@ function App() {
         <br />
         <p className="subtitle">{linkTitle}</p>
         <IconContainer>
-          <Icon
-            id={"about"}
+          <FaEye
             onMouseEnter={() => {
+              changeTitle("About Me");
               setHovered(true);
-              console.log(Icon.id);
             }}
-            onMouseLeave={() => setHovered(false)}
-          >
-            <FaEye />
-          </Icon>
-
+            onMouseLeave={() => {
+              changeTitle("Front End Engineer");
+              setHovered(false);
+            }}
+          />
           <FaCode
             onMouseEnter={() => {
+              changeTitle("Recent Projects");
               setHovered(true);
-              changeTitle(FaCode.id);
             }}
-            onMouseLeave={() => setHovered(false)}
-            id={"projects"}
+            onMouseLeave={() => {
+              changeTitle("Front End Engineer");
+              setHovered(false);
+            }}
           />
           <FaClipboard
             onMouseEnter={() => {
+              changeTitle("Current Resume");
               setHovered(true);
-              changeTitle(FaClipboard.id);
             }}
-            onMouseLeave={() => setHovered(false)}
-            id={"resume"}
+            onMouseLeave={() => {
+              changeTitle("Front End Engineer");
+              setHovered(false);
+            }}
           />
         </IconContainer>
       </div>
