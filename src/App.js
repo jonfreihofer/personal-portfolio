@@ -1,6 +1,6 @@
 import "./App.css";
 import IconContainer from "../src/containers/IconContainer";
-import { FaBeer } from "react-icons/fa";
+import { FaEye, FaCode, FaClipboard } from "react-icons/fa";
 
 function App() {
   return (
@@ -9,10 +9,12 @@ function App() {
         <header className={"name"}>Jonathan Freihofer</header>
         <br />
         <p className="subtitle">Front End Engineer</p>
+        <IconContainer>
+          <FaEye />
+          <FaCode />
+          <FaClipboard />
+        </IconContainer>
       </div>
-      <IconContainer>
-        <FaBeer />
-      </IconContainer>
     </>
   );
 }
