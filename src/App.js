@@ -1,6 +1,7 @@
 import "./App.css";
 import IconContainer from "../src/containers/IconContainer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaBeer } from "react-icons/fa";
+
 function App() {
   return (
     <>
@@ -10,7 +11,7 @@ function App() {
         <p className="subtitle">Front End Engineer</p>
       </div>
       <IconContainer>
-        <FontAwesomeIcon icon="fa-regular fa-coffee" />
+        <FaBeer />
       </IconContainer>
     </>
   );
