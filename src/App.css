@@ -1,11 +1,11 @@
 .landing__page {
   margin: 0 auto;
-  margin-bottom: 55%;
+  margin-bottom: 10%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-top: 12%;
+  margin-top: 27%;
   color: #0d64e7;
   letter-spacing: 3px;
   font-weight: bolder;
@@ -20,6 +20,26 @@
 }
 .subtitle {
   font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+
+.icons * {
+  cursor: pointer;
+}
+
+.icon__container {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 10px;
+  opacity: 0.3;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.icon__container.about:hover {
+  opacity: 1;
 }
 @keyframes animation {
   from {
