@@ -5,7 +5,7 @@ export const StyledIconContainer = styled.div`
   display: flex;
   justify-content: space-between;
   width: 50%;
-  margin: 3px;
+  margin-top: 10px;
   opacity: 0.3;
   font-size: 1.2em;
 `;
