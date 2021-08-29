@@ -40,9 +40,11 @@ function App({ position }) {
             onMouseLeave={() => setHovered(false)}
           />
         </main>
-        <div className="titles">
-          <p className="icon-title">{hovered && title}</p>
-        </div>
+        <LinkText hovered={hovered}>
+          <div className="titles">
+            <p className="icon-title">{hovered && title}</p>
+          </div>
+        </LinkText>
       </div>
     </>
   );

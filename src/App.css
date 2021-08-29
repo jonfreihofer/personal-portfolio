@@ -5,7 +5,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-top: 20%;
+  margin-top: 16%;
   color: #0d64e7;
   letter-spacing: 3px;
   font-weight: bolder;
@@ -16,12 +16,15 @@
   height: 60vh;
 }
 .name {
-  animation: animation 5s linear forwards;
+  animation: animation 2s linear forwards;
   animation-name: animation;
 }
 .subtitle {
   font-size: 1.75rem;
   margin-bottom: 10px;
+  animation: animation 2s linear forwards;
+  animation-name: animation;
+  animation-delay: 1s;
 }
 .icon {
   cursor: pointer;
@@ -45,18 +48,15 @@
 }
 .icon:hover {
   opacity: 100%;
+  text-shadow: #fff 0px 0px 3.5px, #fff 0px 0px 1px, #fff 0px 0px 1px,
+    #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px;
   /* transform: opacity; */
 }
 
 .icon-title {
   font-size: 0.45em;
 }
-.titles {
-  animation: animation-title 5s linear forwards;
-  animation-name: animation-title;
-  position: fixed;
-  bottom: 0;
-}
+
 @keyframes animation {
   from {
     color: #0d64e7;
