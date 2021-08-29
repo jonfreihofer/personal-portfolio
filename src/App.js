@@ -3,6 +3,7 @@ import "./App.css";
 import { React, useState } from "react";
 import LinkText from "../src/components/LinkText";
 import { FaEye, FaCode, FaClipboard } from "react-icons/fa";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App({ position }) {
   const [hovered, setHovered] = useState(false);
