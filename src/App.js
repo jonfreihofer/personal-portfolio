@@ -17,8 +17,9 @@ function App() {
         <header className={"name"}>Jonathan Freihofer</header>
         <br />
         <p className="subtitle">{linkTitle}</p>
-        <IconContainer>
+        <main className="icon__container">
           <FaEye
+            className="about"
             onMouseEnter={() => {
               changeTitle("About Me");
               setHovered(true);
@@ -29,6 +30,7 @@ function App() {
             }}
           />
           <FaCode
+            className="project"
             onMouseEnter={() => {
               changeTitle("Recent Projects");
               setHovered(true);
@@ -39,6 +41,7 @@ function App() {
             }}
           />
           <FaClipboard
+            className="resume"
             onMouseEnter={() => {
               changeTitle("Current Resume");
               setHovered(true);
@@ -48,7 +51,7 @@ function App() {
               setHovered(false);
             }}
           />
-        </IconContainer>
+        </main>
       </div>
     </>
   );
