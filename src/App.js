@@ -3,12 +3,21 @@ import "./App.css";
 import React from "react";
 import Home from "../src/pages/Home";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Home />
+      <Router>
+        <Switch>
+          <Route exact patch="/">
+            <Home />
+          </Route>
+          <Route path="/about"></Route>
+          <Route path="/projects"></Route>
+          <Route path="/resume"></Route>
+        </Switch>
+      </Router>
     </>
   );
 }
