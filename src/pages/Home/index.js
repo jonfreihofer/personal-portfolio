@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import { Link } from "react-router-dom";
 import LinkText from "../../components/LinkText";
 import { FaEye, FaCode, FaClipboard } from "react-icons/fa";
 
@@ -13,14 +14,16 @@ export default function Home({ children }) {
         <br />
         <p className="subtitle">Front End Engineer</p>
         <main className="icon__container">
-          <FaEye
-            className="icon about"
-            onMouseEnter={() => {
-              setHovered(true);
-              setTitle("About");
-            }}
-            onMouseLeave={() => setHovered(false)}
-          />
+          <Link to="/about" style={{ textDecoration: "none" }}>
+            <FaEye
+              className="icon about"
+              onMouseEnter={() => {
+                setHovered(true);
+                setTitle("About");
+              }}
+              onMouseLeave={() => setHovered(false)}
+            />
+          </Link>
           <FaCode
             className="icon project"
             onMouseEnter={() => {
