@@ -1,7 +1,6 @@
 import { React, useState } from "react";
 import LinkText from "../../components/LinkText";
 import { FaEye, FaCode, FaClipboard } from "react-icons/fa";
-import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 
 export default function Home({ children }) {
   const [hovered, setHovered] = useState(false);
