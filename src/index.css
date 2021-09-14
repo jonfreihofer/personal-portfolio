@@ -5,11 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #0d64e7;
-  color: #0d64e7;
-  letter-spacing: 3px;
-  text-shadow: #fff 0px 0px 3.5px, #fff 0px 0px 1px, #fff 0px 0px 1px,
-    #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px;
+  background: var(--color-main-blue);
+  color: var(--color-main-blue);
+  text-shadow: var(--global-text-shadow);
 }
 
 code {

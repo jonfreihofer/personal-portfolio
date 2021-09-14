@@ -1,3 +1,13 @@
+html {
+  scroll-behavior: smooth;
+  margin: 0 auto;
+}
+:root {
+  --color-main-blue: #0d64e7;
+  --color-main-white: #fff;
+  --global-text-shadow: #fff 0px 0px 3.5px, #fff 0px 0px 1px, #fff 0px 0px 1px,
+    #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px;
+}
 /* home page */
 
 .landing__page {
@@ -6,24 +16,26 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  letter-spacing: 3px;
   justify-content: center;
   margin-top: 10%;
-  color: #0d64e7;
+  color: var(--color-main-blue);
   letter-spacing: 3px;
   font-weight: bolder;
   font-size: 3.2em;
   text-transform: uppercase;
-  text-shadow: #fff 0px 0px 3.5px, #fff 0px 0px 1px, #fff 0px 0px 1px,
-    #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px;
+  text-shadow: var(--global-text-shadow);
   height: 60vh;
 }
 .name {
   animation: animation 2s linear forwards;
+  letter-spacing: 3px;
   animation-name: animation;
 }
 .subtitle {
   font-size: 1.75rem;
   margin-bottom: 10px;
+  letter-spacing: 3px;
   animation: animation 2s linear forwards;
   animation-name: animation;
   animation-delay: 1s;
@@ -34,7 +46,7 @@
 }
 
 .icon__container {
-  color: white;
+  color: var(--color-main-white);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -50,8 +62,7 @@
 }
 .icon:hover {
   opacity: 100%;
-  text-shadow: #fff 0px 0px 3.5px, #fff 0px 0px 1px, #fff 0px 0px 1px,
-    #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px;
+  text-shadow: var(--global-text-shadow);
   /* transform: opacity; */
 }
 
@@ -61,18 +72,18 @@
 
 @keyframes animation {
   from {
-    color: #0d64e7;
+    color: var(--color-main-blue);
   }
   to {
-    color: #fff;
+    color: var(--color-main-white);
   }
 }
 @keyframes animation-title {
   from {
-    color: #0d64e7;
+    color: var(--color-main-blue);
   }
   to {
-    color: #fff;
+    color: var(--color-main-white);
   }
 }
 
@@ -89,4 +100,41 @@
   .icon {
     margin: 5%;
   }
+}
+
+/* about page */
+
+.about-container {
+  margin: 0px 12px 0px 12px;
+  display: flex;
+  border: dotted 1px pink;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.unstyled-text {
+  text-shadow: none;
+  flex-wrap: wrap;
+  font-size: 1.5em;
+  padding: 20px;
+  letter-spacing: 1px;
+  color: var(--color-main-white);
+}
+
+.tools-section {
+  margin: 0 auto;
+  border: dotted 1px pink;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 700px;
+}
+.tools {
+  padding: none;
+  color: var(--color-main-blue);
+  text-shadow: var(--global-text-shadow);
+  font-size: 1.6em;
 }

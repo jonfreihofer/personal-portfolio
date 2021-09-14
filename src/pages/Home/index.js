@@ -1,6 +1,6 @@
 import { React, useState } from "react";
-import { Link } from "react-router-dom";
 import LinkText from "../../components/LinkText";
+import { StyledLink } from "../../components/Link";
 import { FaEye, FaCode, FaClipboard } from "react-icons/fa";
 
 export default function Home({ children }) {
@@ -10,11 +10,11 @@ export default function Home({ children }) {
   return (
     <>
       <div className="landing__page">
-        <header className={"name"}>Jonathan Freihofer</header>
+        <header className="name">Jonathan Freihofer</header>
         <br />
         <p className="subtitle">Front End Engineer</p>
         <main className="icon__container">
-          <Link to="/about" style={{ textDecoration: "none" }}>
+          <StyledLink to="/about">
             <FaEye
               className="icon about"
               onMouseEnter={() => {
@@ -23,23 +23,27 @@ export default function Home({ children }) {
               }}
               onMouseLeave={() => setHovered(false)}
             />
-          </Link>
-          <FaCode
-            className="icon project"
-            onMouseEnter={() => {
-              setHovered(true);
-              setTitle("Recent Projects");
-            }}
-            onMouseLeave={() => setHovered(false)}
-          />
-          <FaClipboard
-            className="icon resume"
-            onMouseEnter={() => {
-              setHovered(true);
-              setTitle("Resume");
-            }}
-            onMouseLeave={() => setHovered(false)}
-          />
+          </StyledLink>
+          <StyledLink to="/projects">
+            <FaCode
+              className="icon project"
+              onMouseEnter={() => {
+                setHovered(true);
+                setTitle("Recent Projects");
+              }}
+              onMouseLeave={() => setHovered(false)}
+            />
+          </StyledLink>
+          <StyledLink to="/contact">
+            <FaClipboard
+              className="icon contact"
+              onMouseEnter={() => {
+                setHovered(true);
+                setTitle("Contact");
+              }}
+              onMouseLeave={() => setHovered(false)}
+            />
+          </StyledLink>
         </main>
         <LinkText hovered={hovered}>
           <div className="titles">
