@@ -28,7 +28,7 @@ html {
   height: 60vh;
 }
 .name {
-  animation: animation 2s linear forwards;
+  animation: animation 1s linear forwards;
   letter-spacing: 3px;
   animation-name: animation;
 }
@@ -36,9 +36,9 @@ html {
   font-size: 1.75rem;
   margin-bottom: 10px;
   letter-spacing: 3px;
-  animation: animation 2s linear forwards;
+  animation: animation 1s linear forwards;
   animation-name: animation;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 .icon {
   cursor: pointer;
@@ -105,9 +105,10 @@ html {
 /* about page */
 
 .about-container {
-  margin: 0px 12px 0px 12px;
+  margin: 5px 12px 0px 12px;
   display: flex;
-  border: dotted 1px pink;
+  border: solid 3px var(--color-main-white);
+  border-radius: 15px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -123,8 +124,10 @@ html {
 }
 
 .tools-section {
-  margin: 0 auto;
-  border: dotted 1px pink;
+  margin: 7px auto auto auto;
+  /* border: solid 3px var(--color-main-white); */
+  border-radius: 15px;
+  /* box-shadow: var(--global-text-shadow); */
   font-weight: bolder;
   display: flex;
   justify-content: space-between;
@@ -134,7 +137,15 @@ html {
 }
 .tools {
   padding: none;
+  width: 40%;
+  height: 70vh;
+  border: solid 3px var(--color-main-white);
+  border-radius: 15px;
   color: var(--color-main-blue);
   text-shadow: var(--global-text-shadow);
   font-size: 1.6em;
+}
+
+.list {
+  font-size: 1em;
 }
