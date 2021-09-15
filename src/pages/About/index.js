@@ -7,13 +7,28 @@ export default function About({ children }) {
         <h1 className="name">Hey </h1>
         <article className="unstyled-text about">
           <p>
-            My name is Jonathan Freihofer. I build dynamic and interactive front
-            end web applications.
+            My name is Jonathan Freihofer. I build dynamic and interactive web
+            applications with a strong focus on the client side.
           </p>
           <p>
             I'm a problem solver, expert learner, teacher, self starter,
-            motivator, and motivatee.
+            motivator, and motivatee. Perhaps best of all, I'm also a pretty
+            nice guy.
           </p>
+          <a
+            href="Resume(1).pdf"
+            className="resume"
+            style={{
+              textDecoration: "none",
+              color: "white",
+              border: "solid 2px white",
+              padding: "5px 10px",
+              borderRadius: "15px",
+              fontWeight: "bolder",
+            }}
+          >
+            <span>Resume</span>
+          </a>
         </article>
       </header>
       <main className="tools-section">

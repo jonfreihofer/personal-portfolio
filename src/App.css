@@ -149,3 +149,27 @@ html {
 .list {
   font-size: 1em;
 }
+
+@media (max-width: 400px) {
+  .tools-section {
+    flex-direction: column;
+    width: 100%;
+  }
+  .tools {
+    width: 80%;
+    margin: 5px;
+    height: auto;
+    text-align: center;
+  }
+}
+
+.resume {
+  transition: 1.3s ease;
+}
+.resume:hover {
+  background: var(--color-main-white);
+  color: var(--color-main-blue);
+}
+.resume:hover * {
+  color: var(--color-main-blue);
+}
