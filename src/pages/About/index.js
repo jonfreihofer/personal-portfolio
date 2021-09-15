@@ -12,8 +12,8 @@ export default function About({ children }) {
           </p>
           <p>
             I'm a problem solver, expert learner, teacher, self starter,
-            motivator, and motivatee. Perhaps best of all, I'm also a pretty
-            nice guy.
+            motivator, and motivatee. Perhaps best of all, I happen to be a
+            pretty nice guy.
           </p>
           <a
             href="Resume(1).pdf"
@@ -21,13 +21,13 @@ export default function About({ children }) {
             style={{
               textDecoration: "none",
               color: "white",
-              border: "solid 2px white",
+              border: "solid 3px white",
               padding: "5px 10px",
               borderRadius: "15px",
               fontWeight: "bolder",
             }}
           >
-            <span>Resume</span>
+            <span>Resumé</span>
           </a>
         </article>
       </header>
