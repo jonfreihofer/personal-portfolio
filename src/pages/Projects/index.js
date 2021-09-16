@@ -1,5 +1,12 @@
 import React from "react";
+import { StyledImage, ImageWrapper } from "../../components/Image/styles.js";
 
 export default function Projects() {
-  return <p>Boh</p>;
+  return (
+    <>
+      <ImageWrapper>
+        <StyledImage src="./synthpic.png" alt="boh" />
+      </ImageWrapper>
+    </>
+  );
 }

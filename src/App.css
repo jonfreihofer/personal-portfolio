@@ -4,7 +4,7 @@ html {
 }
 :root {
   --color-main-blue: #0d64e7;
-  --color-main-white: #fff;
+  --color-main-white: #ffff;
   --global-text-shadow: #fff 0px 0px 3.5px, #fff 0px 0px 1px, #fff 0px 0px 1px,
     #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px;
 }
@@ -87,7 +87,7 @@ html {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .landing__page {
     text-align: center;
     margin-top: 35%;
@@ -125,9 +125,7 @@ html {
 
 .tools-section {
   margin: 7px auto auto auto;
-  /* border: solid 3px var(--color-main-white); */
   border-radius: 15px;
-  /* box-shadow: var(--global-text-shadow); */
   font-weight: bolder;
   display: flex;
   justify-content: space-between;
@@ -148,4 +146,34 @@ html {
 
 .list {
   font-size: 1em;
+}
+
+@media (max-width: 600px) {
+  .tools-section {
+    flex-direction: column;
+    width: 100%;
+  }
+  .tools {
+    width: 80%;
+    margin: 5px;
+    height: auto;
+    text-align: center;
+  }
+}
+
+.resume {
+  transition: 1.3s ease;
+}
+.resume:hover {
+  background: var(--color-main-white);
+  color: var(--color-main-blue);
+}
+.resume:hover * {
+  color: var(--color-main-blue);
+}
+
+/* Recent Projects */
+
+.imageWrapper {
+  border: solid 3px pink;
 }
