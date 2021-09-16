@@ -8,7 +8,8 @@ export default function About({ children }) {
         <article className="unstyled-text about">
           <p>
             My name is Jonathan Freihofer. I build dynamic and interactive web
-            applications with a strong focus on the client side.
+            applications with a strong focus on client facing programming and
+            design.
           </p>
           <p>
             I'm a problem solver, expert learner, teacher, self starter,
@@ -20,14 +21,31 @@ export default function About({ children }) {
             className="resume"
             style={{
               textDecoration: "none",
+              width: "30px",
               color: "white",
               border: "solid 3px white",
               padding: "5px 10px",
               borderRadius: "15px",
-              fontWeight: "bolder",
+              fontWeight: "bold",
             }}
           >
             <span>Resumé</span>
+          </a>
+          <a
+            href="/"
+            className="resume"
+            style={{
+              textDecoration: "none",
+              width: "30px",
+              marginLeft: "7px",
+              color: "white",
+              border: "solid 3px white",
+              padding: "5px 10px",
+              borderRadius: "15px",
+              fontWeight: "bold",
+            }}
+          >
+            <span>Home</span>
           </a>
         </article>
       </header>
