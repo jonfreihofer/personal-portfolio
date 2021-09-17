@@ -6,7 +6,6 @@ export const StyledIconContainer = styled.div`
   justify-content: space-between;
   width: 50%;
   margin-top: 10px;
-  opacity: 0.3;
   font-size: 1.2em;
   cursor: pointer;
 `;
