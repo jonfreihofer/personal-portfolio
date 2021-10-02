@@ -3,8 +3,11 @@ html {
   margin: 0 auto;
 }
 :root {
-  --color-main-blue: #0d64e7;
+  --color-main-blue: #3675eb;
+  --color-secondary-blue: #234b96;
   --color-main-white: #ffff;
+  --global-box-shadow: #fff 0px 0px 3.5px, #fff 0px 0px 1px, #fff 0px 0px 1px,
+    #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 5px;
   --global-text-shadow: #fff 0px 0px 3.5px, #fff 0px 0px 1px, #fff 0px 0px 1px,
     #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px;
 }
@@ -104,20 +107,35 @@ html {
 
 /* about page */
 
-.about-container {
-  margin: 5px 12px 0px 12px;
+.about-page {
+  background: var(--color-secondary-blue);
   display: flex;
-  border: solid 3px var(--color-main-white);
-  border-radius: 15px;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blur {
+  position: absolute;
+  -webkit-filter: blur(7px);
+  width: 700px;
+  background: var(--color-main-blue);
+}
+
+.about-container {
+  position: relative;
+  background: var(--color-main-blue);
+  box-shadow: var(--global-box-shadow);
+  text-align: center;
+  margin: 5px 12px 5px 12px;
+  border-radius: 15px;
+  width: 700px;
 }
 
 .unstyled-text {
   text-shadow: none;
   flex-wrap: wrap;
-  font-size: 1.5em;
+  font-size: 1.1em;
   padding: 20px;
   letter-spacing: 1px;
   color: var(--color-main-white);
@@ -125,8 +143,11 @@ html {
 
 .tools-section {
   margin: 7px auto auto auto;
+  /* margin: 0 auto; */
   border-radius: 15px;
   font-weight: bolder;
+  box-shadow: var(--global-box-shadow);
+  background: var(--color-main-blue);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -135,23 +156,26 @@ html {
 }
 .tools {
   padding: none;
-  width: 40%;
+  width: 50%;
   height: 70vh;
-  border: solid 3px var(--color-main-white);
+  /* border: solid 3px var(--color-main-white); */
   border-radius: 15px;
   color: var(--color-main-blue);
   text-shadow: var(--global-text-shadow);
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 
 .list {
-  font-size: 1em;
+  font-size: 0.85em;
 }
 
 @media (max-width: 600px) {
+  .about-container {
+    width: 80%;
+  }
   .tools-section {
     flex-direction: column;
-    width: 100%;
+    width: 80%;
   }
   .tools {
     width: 80%;
@@ -162,6 +186,7 @@ html {
 }
 
 .resume {
+  background: var(--color-secondary-blue);
   transition: 1.3s ease;
 }
 .resume:hover {
@@ -175,5 +200,15 @@ html {
 /* Recent Projects */
 
 .imageWrapper {
-  border: solid 3px pink;
+}
+.projects-container {
+  display: flex;
+  text-align: center;
+  height: 100vh;
+  flex-direction: column;
+  background: var(--color-secondary-blue);
+}
+.projects-container h1 {
+  animation: animation 1s linear forwards;
+  animation-name: animation;
 }
