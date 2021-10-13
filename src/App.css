@@ -6,8 +6,11 @@ html {
   --color-main-blue: #3675eb;
   --color-secondary-blue: #234b96;
   --color-main-white: #ffff;
+  --color-secondary-white: #f8f8ff;
   --global-box-shadow: #fff 0px 0px 3.5px, #fff 0px 0px 1px, #fff 0px 0px 1px,
     #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 5px;
+  --global-secondary-box-shadow: black 0px 0px 3.5px, black 0px 0px 1px,
+    black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 1px, black 0px 0px 5px;
   --global-text-shadow: #fff 0px 0px 3.5px, #fff 0px 0px 1px, #fff 0px 0px 1px,
     #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px;
 }
@@ -199,8 +202,6 @@ html {
 
 /* Recent Projects */
 
-.imageWrapper {
-}
 .projects-container {
   display: flex;
   text-align: center;
@@ -211,4 +212,19 @@ html {
 .projects-container h1 {
   animation: animation 1s linear forwards;
   animation-name: animation;
+}
+
+.project {
+  margin: 5px;
+}
+
+.project p {
+  color: white;
+  text-shadow: none;
+  margin: 5px;
+}
+
+.project a {
+  text-decoration: none;
+  color: white;
 }
