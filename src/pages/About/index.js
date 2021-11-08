@@ -1,4 +1,5 @@
 import React from "react";
+import { Document, Page } from "react-pdf";
 
 export default function About({ children }) {
   return (
@@ -19,7 +20,7 @@ export default function About({ children }) {
               pretty nice guy.
             </p>
             <a
-              href="Resume(1).pdf"
+              href="./Resume(1).pdf"
               className="resume"
               style={{
                 textDecoration: "none",
@@ -33,7 +34,12 @@ export default function About({ children }) {
             >
               <span>Resumé</span>
             </a>
-            <a
+            <div>
+              <Document file="/Resume(1).pdf" onLoadError={console.error}>
+                <Page />
+              </Document>
+            </div>
+            {/* <a
               href="/"
               className="resume"
               style={{
@@ -48,7 +54,7 @@ export default function About({ children }) {
               }}
             >
               <span>Home</span>
-            </a>
+            </a> */}
           </article>
         </header>
 
